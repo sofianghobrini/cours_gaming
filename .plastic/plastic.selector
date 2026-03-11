@@ -1,0 +1,3 @@
+repository "Cours_jeu2D/Cours_jeu2D@9072360385190@cloud"
+  path "/"
+    smartbranch "/main"
