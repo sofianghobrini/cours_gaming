@@ -1,6 +1,8 @@
 using UnityEngine;
 
 
+
+/*Ce script permet au joueur de se déplacer et de sauter*/
 public class PlayerMovement : MonoBehaviour
 {
 
