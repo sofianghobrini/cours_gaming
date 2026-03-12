@@ -1,7 +1,7 @@
 using UnityEngine;
 
 
-/*Ce script permet à la caméra de suivre le joueur avec un décalage et un temps d'attente*/
+/*Ce script permet à la  caméra de suivre le joueur avec un décalage et un temps d'attente*/
 public class CameraFollow : MonoBehaviour
 {
     public GameObject player;
