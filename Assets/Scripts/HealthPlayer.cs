@@ -1,12 +1,17 @@
 using UnityEngine;
-
+using System.Collections;
 public class HealthPlayer : MonoBehaviour
 {
 
     public int maxHealth = 100;
     public int currentHealth;
 
+    public float invincibilityTimeAfterHit = 2f;
+    public float invincibilityDuration = 0.2f;
+    public bool isInvincible = false;
+
     public HealthBar healthBar;
+    public SpriteRenderer graphics;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,9 +30,32 @@ public class HealthPlayer : MonoBehaviour
     }
 
     //Pour le test de la barra de vie
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        if (!isInvincible)
+        {
+            currentHealth -= damage;
+            healthBar.SetHealth(currentHealth);
+            isInvincible = true;
+            StartCoroutine(InvincibilityFlash());
+            StartCoroutine(HandleIncivibilityDelay());
+        }
+    }
+
+    public IEnumerator InvincibilityFlash()
+    {
+        while (isInvincible)
+        {
+            graphics.color = new Color(1f, 1f, 1f, 0f); // Semi-transparent
+            yield return new WaitForSeconds(invincibilityDuration);
+            graphics.color = new Color(1f, 1f, 1f, 1f); // Fully opaque
+            yield return new WaitForSeconds(invincibilityDuration);
+        }
+    }
+
+    public IEnumerator HandleIncivibilityDelay()
+    {
+        yield return new WaitForSeconds(invincibilityTimeAfterHit);
+        isInvincible = false;
     }
 }
