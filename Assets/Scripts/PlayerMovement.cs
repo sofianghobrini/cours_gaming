@@ -7,9 +7,11 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float moveSpeed;
+    public float climbSpeed;
     public float jumpForce;
     private bool isJumping;
     private bool isGrounded;
+    [HideInInspector]
     public bool isClimbing;
 
     public Transform groundCheck;
@@ -28,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     {
         
         horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed;
-        verticalMovement = Input.GetAxis("Vertical") * moveSpeed;
+        verticalMovement = Input.GetAxis("Vertical") * climbSpeed;
     
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
@@ -40,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
         float characterVelocity = Mathf.Abs(rb.linearVelocity.x);
         animator.SetFloat("Speed", characterVelocity);
+        animator.SetBool("isClimbing", isClimbing);
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -53,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
         if (isClimbing)
         {
             //Déplace le joueur verticale
-            Vector3 targetVelocity = new Vector2(rb.linearVelocity.x , _verticalMovement);
+            Vector3 targetVelocity = new Vector2(0 , _verticalMovement);
             rb.linearVelocity = Vector3.SmoothDamp(rb.linearVelocity, targetVelocity, ref velocity, .05f);
         }
         else
