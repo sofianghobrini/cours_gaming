@@ -12,6 +12,19 @@ public class HealthPlayer : MonoBehaviour
 
     public HealthBar healthBar;
     public SpriteRenderer graphics;
+    public static HealthPlayer instance;
+
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("Il y a plus d'une instance de HealthPlayer dans la scène");
+            return;
+        }
+        instance = this;
+    } 
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,6 +42,20 @@ public class HealthPlayer : MonoBehaviour
         }
     }
 
+
+    public void HealPlayer(int amount)
+    {
+        if ((currentHealth + amount) > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        else
+        {
+            currentHealth += amount;
+        }
+       
+       healthBar.SetHealth(currentHealth);
+    }
     //Pour le test de la barra de vie
     public void TakeDamage(int damage)
     {
