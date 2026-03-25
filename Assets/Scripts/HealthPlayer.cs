@@ -38,7 +38,7 @@ public class HealthPlayer : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.H))
         {
-            TakeDamage(20);
+            TakeDamage(60);
         }
     }
 
@@ -63,12 +63,29 @@ public class HealthPlayer : MonoBehaviour
         {
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
+
+            //vérifier si le joueur est vivant ou pas
+            if(currentHealth <= 0)
+            {
+                Die();
+                return;
+            }
             isInvincible = true;
             StartCoroutine(InvincibilityFlash());
             StartCoroutine(HandleIncivibilityDelay());
         }
     }
 
+    public void Die()
+    {
+        Debug.Log("Le joueur est mort");
+        PlayerMovement.instance.enabled = false; // Désactiver le script de mouvement du joueur
+        PlayerMovement.instance.animator.SetTrigger("ifDie"); // Déclencher l'animation de mort du joueur
+        PlayerMovement.instance.rb.bodyType=RigidbodyType2D.Kinematic; // passe Dynamic -> Kinematic
+        PlayerMovement.instance.playerCollider.enabled = false; // Désactiver le collider du joueur pour éviter les interactions après la mort
+        //Ajouter ici les actions à faire quand le joueur meurt (animation, son, etc.)
+
+    }
     public IEnumerator InvincibilityFlash()
     {
         while (isInvincible)
