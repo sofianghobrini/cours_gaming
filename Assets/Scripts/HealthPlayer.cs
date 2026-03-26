@@ -84,7 +84,18 @@ public class HealthPlayer : MonoBehaviour
         PlayerMovement.instance.rb.bodyType=RigidbodyType2D.Kinematic; // passe Dynamic -> Kinematic
         PlayerMovement.instance.playerCollider.enabled = false; // Désactiver le collider du joueur pour éviter les interactions après la mort
         //Ajouter ici les actions à faire quand le joueur meurt (animation, son, etc.)
+        GameOverManager.instance.OnPlayerDeath(); // Appeler la méthode pour afficher l'écran de game over
+    }
 
+    public void Respawn()
+    {
+        currentHealth = maxHealth;
+        healthBar.SetHealth(currentHealth);
+        PlayerMovement.instance.enabled = true; // Réactiver le script de mouvement du joueur
+        PlayerMovement.instance.animator.SetTrigger("Respawn"); // Déclencher l'animation de respawn du joueur
+        PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Dynamic; // passe Kinematic -> Dynamic
+        PlayerMovement.instance.playerCollider.enabled = true; // Réactiver le collider du joueur pour les interactions après le respawn
+        //Ajouter ici les actions à faire quand le joueur respawn (animation, son, etc.)
     }
     public IEnumerator InvincibilityFlash()
     {

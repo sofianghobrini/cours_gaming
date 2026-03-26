@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed;
         verticalMovement = Input.GetAxis("Vertical") * climbSpeed;
     
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded && !isClimbing)
         {
             isJumping = true;
         }
