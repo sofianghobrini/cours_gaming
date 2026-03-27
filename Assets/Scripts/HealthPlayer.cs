@@ -81,6 +81,7 @@ public class HealthPlayer : MonoBehaviour
         Debug.Log("Le joueur est mort");
         PlayerMovement.instance.enabled = false; // Désactiver le script de mouvement du joueur
         PlayerMovement.instance.animator.SetTrigger("ifDie"); // Déclencher l'animation de mort du joueur
+        PlayerMovement.instance.rb.linearVelocity = Vector3.zero; // Arrêter le mouvement du joueur
         PlayerMovement.instance.rb.bodyType=RigidbodyType2D.Kinematic; // passe Dynamic -> Kinematic
         PlayerMovement.instance.playerCollider.enabled = false; // Désactiver le collider du joueur pour éviter les interactions après la mort
         //Ajouter ici les actions à faire quand le joueur meurt (animation, son, etc.)
