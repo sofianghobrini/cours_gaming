@@ -39,8 +39,9 @@ public class GameOverManager : MonoBehaviour
 
     public void MainMenuButton()
     {
+        DontDestroyOnLoadScene.instance.RemoveFromDontDestroyOnLoad();
         //Retourner au menu principal
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGameButton()
