@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public static bool gameIsPaused = false;
-    public GameObject pauseMenuUI;
+    public GameObject pauseMenuUI, settingsWindow;
     // Update is called once per frame
     void Update()
     {
@@ -41,5 +41,16 @@ public class PauseMenu : MonoBehaviour
         DontDestroyOnLoadScene.instance.RemoveFromDontDestroyOnLoad(); // Empêche la destruction de l'objet lors du chargement de la nouvelle scèn
         Resume();
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void SettingsButton()
+    {
+        //Debug.Log("Settings button clicked");
+        settingsWindow.SetActive(true);
+    }
+
+    public void CloseSettingsWindow()
+    {
+        settingsWindow.SetActive(false);
     }
 }
