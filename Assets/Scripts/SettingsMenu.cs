@@ -39,7 +39,14 @@ public class SettingsMenu : MonoBehaviour
     {
         // Implémentez la logique pour ajuster le volume du jeu
         //Debug.Log("Volume réglé à : " + volume);
-        audioMixer.SetFloat("Volume", volume);
+        audioMixer.SetFloat("Music", volume);
+    }
+
+        public void SetSoundVolume(float volume)
+    {
+        // Implémentez la logique pour ajuster le volume du jeu
+        //Debug.Log("Volume réglé à : " + volume);
+        audioMixer.SetFloat("SoundEffect", volume);
     }
 
     public void SetFullScreen(bool isFullScreen)
