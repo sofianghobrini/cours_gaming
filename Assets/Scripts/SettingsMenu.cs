@@ -10,9 +10,16 @@ public class SettingsMenu : MonoBehaviour
 
     public TMPro.TMP_Dropdown resolutionDropdown;
     Resolution[] resolutions;
-
+    public Slider musicSlider;
+    public Slider soundEffectSlider;
     public void Start()
     {
+        audioMixer.GetFloat("Music", out float musicValue);
+        audioMixer.GetFloat("SoundEffect", out float soundEffectValue);
+
+        musicSlider.value = musicValue;
+        soundEffectSlider.value = soundEffectValue;
+
         resolutions = Screen.resolutions.Select(resolution => new Resolution { width = resolution.width, height = resolution.height }).Distinct().ToArray();
         resolutionDropdown.ClearOptions();
 

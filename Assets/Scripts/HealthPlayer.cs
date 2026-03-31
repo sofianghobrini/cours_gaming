@@ -13,7 +13,7 @@ public class HealthPlayer : MonoBehaviour
     public HealthBar healthBar;
     public SpriteRenderer graphics;
     public static HealthPlayer instance;
-
+    public AudioClip hitSound; // Assigner le clip audio de hit dans l'inspecteur
 
     private void Awake()
     {
@@ -61,6 +61,7 @@ public class HealthPlayer : MonoBehaviour
     {
         if (!isInvincible)
         {
+            AudioManager.instance.PlayClipAt(hitSound, transform.position); // Joue le son de hit à la position du joueur
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
 

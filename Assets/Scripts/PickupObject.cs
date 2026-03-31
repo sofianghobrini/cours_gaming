@@ -9,7 +9,7 @@ public class PickupObject : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            audioSource.PlayOneShot(soundEffect); // Joue le son de ramassage
+            AudioManager.instance.PlayClipAt(soundEffect, transform.position); // Joue le son de ramassage à la position de l'objet
             Inventory.instance.AddCoins(1);
             CurrentSceneManager.instance.coinsPickedUpInThisSceneCount++;
             Destroy(gameObject);

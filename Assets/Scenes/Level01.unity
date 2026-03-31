@@ -8665,6 +8665,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8f4ccb3df8a597046a88e16a6a925177, type: 3}
   - {fileID: 8300000, guid: e8503f69563fb4f4483d2848f255a004, type: 3}
   audioSource: {fileID: 851328021}
+  soundEffectsMixer: {fileID: -4772458046717135445, guid: 2bb96c0a28ab78e4bb89b3cfbfd56835, type: 2}
 --- !u!82 &851328021
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9839,11 +9840,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7186096007493047121, guid: af743281c6888084785459774394fbce, type: 3}
   m_PrefabInstance: {fileID: 8002105494158782815}
   m_PrefabAsset: {fileID: 0}
---- !u!70 &1544949405 stripped
-CapsuleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 1782549904517842646, guid: af743281c6888084785459774394fbce, type: 3}
-  m_PrefabInstance: {fileID: 8002105494158782815}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1559256620
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9852,26 +9848,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 643079905}
     m_Modifications:
-    - target: {fileID: 32113555676373804, guid: d5de96f909b57c1459ca00799bd642b7, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 32113555676373804, guid: d5de96f909b57c1459ca00799bd642b7, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 32113555676373804, guid: d5de96f909b57c1459ca00799bd642b7, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 958099800964537573, guid: d5de96f909b57c1459ca00799bd642b7, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 958099800964537573, guid: d5de96f909b57c1459ca00799bd642b7, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1884449782188082506, guid: d5de96f909b57c1459ca00799bd642b7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9956,25 +9932,9 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 413777428}
-    - target: {fileID: 5022921061186455713, guid: d5de96f909b57c1459ca00799bd642b7, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseSettingsWindow
-      objectReference: {fileID: 0}
-    - target: {fileID: 5022921061186455713, guid: d5de96f909b57c1459ca00799bd642b7, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenu, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5547249624252343597, guid: d5de96f909b57c1459ca00799bd642b7, type: 3}
-      propertyPath: m_Name
-      value: ButtonCloseSetting
-      objectReference: {fileID: 0}
     - target: {fileID: 6072247519381238802, guid: d5de96f909b57c1459ca00799bd642b7, type: 3}
       propertyPath: m_Name
       value: SettingsWindow
-      objectReference: {fileID: 0}
-    - target: {fileID: 6072247519381238802, guid: d5de96f909b57c1459ca00799bd642b7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12031,10 +11991,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2347771964088576033, guid: 415d45a670d68e34286cb99604e79ff4, type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12166,18 +12122,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 553617133312255990, guid: af743281c6888084785459774394fbce, type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 553617133312255990, guid: af743281c6888084785459774394fbce, type: 3}
-      propertyPath: climbSpeed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 553617133312255990, guid: af743281c6888084785459774394fbce, type: 3}
-      propertyPath: playerCollider
-      value: 
-      objectReference: {fileID: 1544949405}
     - target: {fileID: 5653727834732417242, guid: af743281c6888084785459774394fbce, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.708
