@@ -23,6 +23,12 @@ public class MainMenu : MonoBehaviour
         settingsWindow.SetActive(false);
     }
 
+    public void LoadCredits()
+    {
+        // Charger la scène des crédits
+        SceneManager.LoadScene("Credits");
+    }
+
     public void QuitGame()
     {
         // Quitter l'application

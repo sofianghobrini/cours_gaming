@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CurrentSceneManager.cs" />
     <Compile Include="Assets\Scripts\GameOverManager.cs" />
+    <Compile Include="Assets\Scripts\Credits.cs" />
     <Compile Include="Assets\Scripts\DontDestroyOnLoadScene.cs" />
     <Compile Include="Assets\Scripts\DeathZone.cs" />
     <Compile Include="Assets\Scripts\PlayerSpawn.cs" />
