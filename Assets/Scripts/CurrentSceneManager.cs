@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class CurrentSceneManager : MonoBehaviour
 {
-    public bool isPlayerPresentByDefault = false;
     public int coinsPickedUpInThisSceneCount;
+    public Vector3 respawnPoint;
+
     public static CurrentSceneManager instance;
 
     private void Awake()
@@ -14,5 +15,7 @@ public class CurrentSceneManager : MonoBehaviour
             return;
         }
         instance = this;
+
+        respawnPoint = GameObject.FindGameObjectWithTag("Player").transform.position; // Assurez-vous d'avoir un objet avec le tag "PlayerSpawn" dans votre scène
     } 
 }
