@@ -9567,6 +9567,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 182917362348397259, guid: d8fc69d09ef9e004683b7d8eec245e72, type: 3}
+      propertyPath: levelToUnlock
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 880446414078855863, guid: d8fc69d09ef9e004683b7d8eec245e72, type: 3}
       propertyPath: m_Name
       value: CurrentSceneManager

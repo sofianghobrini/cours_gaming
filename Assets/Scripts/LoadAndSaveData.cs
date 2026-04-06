@@ -28,6 +28,11 @@ public class LoadAndSaveData : MonoBehaviour
     public void SaveData()
     {
         PlayerPrefs.SetInt("coinsCount", Inventory.instance.coinsCount);
+         // Sauvegarder le niveau atteint pour débloquer les niveaux suivants
+        if(CurrentSceneManager.instance.levelToUnlock> PlayerPrefs.GetInt("levelReached", 1))
+        {
+            PlayerPrefs.SetInt("levelReached", CurrentSceneManager.instance.levelToUnlock);
+        }
         //PlayerPrefs.SetInt("playerHealth", HealthPlayer.instance.currentHealth);
     }
 
