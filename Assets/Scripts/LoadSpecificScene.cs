@@ -16,6 +16,7 @@ public class LoadSpecificScene : MonoBehaviour
 
     public IEnumerator loadNextScene()
     {
+        LoadAndSaveData.instance.SaveData(); // Sauvegarder les données avant de charger la nouvelle scène
         fadeSystem.SetTrigger("FadeIn"); // Déclenche l'animation de fade out
         yield return new WaitForSeconds(1f); // Attendre que l'animation de
         SceneManager.LoadScene(sceneName); // Charger la scène suivante

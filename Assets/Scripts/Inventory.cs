@@ -28,4 +28,9 @@ public class Inventory : MonoBehaviour
         coinsCount -= count;
         coinsCountText.text = coinsCount.ToString();
     }
+
+    public void UpdateTextUI()
+    {
+        coinsCountText.text = coinsCount.ToString();
+    }
 }
