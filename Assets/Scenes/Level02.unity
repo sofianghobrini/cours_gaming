@@ -7005,6 +7005,75 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15a79681ff5689d48b79cd46bac8654f, type: 3}
+--- !u!1001 &610040447
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2116247841233603244, guid: eb911097390d00c4caf2b5ddc76e37d1, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116247841233603244, guid: eb911097390d00c4caf2b5ddc76e37d1, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[0]'
+      value: RE DEVELLOPEUR ICI POUR LE SECOND TEST
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116247841233603244, guid: eb911097390d00c4caf2b5ddc76e37d1, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[1]'
+      value: CHEWING GUN GUMBALL
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481485830820664681, guid: eb911097390d00c4caf2b5ddc76e37d1, type: 3}
+      propertyPath: m_Name
+      value: NPC01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718576871659715366, guid: eb911097390d00c4caf2b5ddc76e37d1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718576871659715366, guid: eb911097390d00c4caf2b5ddc76e37d1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718576871659715366, guid: eb911097390d00c4caf2b5ddc76e37d1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718576871659715366, guid: eb911097390d00c4caf2b5ddc76e37d1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718576871659715366, guid: eb911097390d00c4caf2b5ddc76e37d1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718576871659715366, guid: eb911097390d00c4caf2b5ddc76e37d1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718576871659715366, guid: eb911097390d00c4caf2b5ddc76e37d1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718576871659715366, guid: eb911097390d00c4caf2b5ddc76e37d1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718576871659715366, guid: eb911097390d00c4caf2b5ddc76e37d1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718576871659715366, guid: eb911097390d00c4caf2b5ddc76e37d1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eb911097390d00c4caf2b5ddc76e37d1, type: 3}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -8910,6 +8979,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6830294206779926192, guid: 50ac88996f532104bb4bd2e0a07f6a5f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1611106277}
+    - target: {fileID: 6830294206779926192, guid: 50ac88996f532104bb4bd2e0a07f6a5f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
+      objectReference: {fileID: 0}
     - target: {fileID: 8974916653660755521, guid: 50ac88996f532104bb4bd2e0a07f6a5f, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -9004,6 +9081,33 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 1812126911348645157, guid: 50ac88996f532104bb4bd2e0a07f6a5f, type: 3}
   m_PrefabInstance: {fileID: 1521640834}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1521640836 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5885150121559979615, guid: 50ac88996f532104bb4bd2e0a07f6a5f, type: 3}
+  m_PrefabInstance: {fileID: 1521640834}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1521640837 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6757837576385760202, guid: 50ac88996f532104bb4bd2e0a07f6a5f, type: 3}
+  m_PrefabInstance: {fileID: 1521640834}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+--- !u!114 &1521640838 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2671453278870475752, guid: 50ac88996f532104bb4bd2e0a07f6a5f, type: 3}
+  m_PrefabInstance: {fileID: 1521640834}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
 --- !u!1001 &1569364029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9156,6 +9260,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2316037026200483467, guid: 8dd999cf53823bf489d5b3ebb667f9d3, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1521640836}
+    - target: {fileID: 2316037026200483467, guid: 8dd999cf53823bf489d5b3ebb667f9d3, type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1521640838}
+    - target: {fileID: 2316037026200483467, guid: 8dd999cf53823bf489d5b3ebb667f9d3, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1521640837}
     - target: {fileID: 3880808001418499293, guid: 8dd999cf53823bf489d5b3ebb667f9d3, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -9173,6 +9289,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dd999cf53823bf489d5b3ebb667f9d3, type: 3}
+--- !u!114 &1611106277 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2316037026200483467, guid: 8dd999cf53823bf489d5b3ebb667f9d3, type: 3}
+  m_PrefabInstance: {fileID: 1611106276}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a9f67a0fa9e73847b24ee32af29b94e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1001 &1724892156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9911,3 +10038,4 @@ SceneRoots:
   - {fileID: 1912534558}
   - {fileID: 2144671013}
   - {fileID: 488783163}
+  - {fileID: 610040447}
