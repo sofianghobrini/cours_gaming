@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15be12a074567644cbf42463ec6aad89, type: 3}
+  m_Name: HealthPotion
+  m_EditorClassIdentifier: Assembly-CSharp::Items
+  id: 1
+  itemName: Health Potion
+  image: {fileID: -728488644960612398, guid: 8ea6677cab1dca949a4c656cedb66831, type: 3}
+  description: Regain des points vie perdus
+  bonusHealth: 20
+  bonusSpeed: 0
+  speedDuration: 0
