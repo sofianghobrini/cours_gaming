@@ -76,7 +76,9 @@ Assets/Scripts/
  LoadSpecificScene.cs
  MainMenu.cs
  PauseMenu.cs
- PickupObject.cs
+ PickupCoin.cs
+ PickupItem.cs
+ PlayerEffect.cs
  PlayerMovement.cs
  SettingsMenu.cs
  WeakSpot.cs

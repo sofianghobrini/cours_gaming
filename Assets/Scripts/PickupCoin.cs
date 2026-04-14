@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PickupObject : MonoBehaviour
+public class PickupCoin : MonoBehaviour
 {
 
     public AudioSource audioSource; // Assigner le son de ramassage dans l'inspecteur

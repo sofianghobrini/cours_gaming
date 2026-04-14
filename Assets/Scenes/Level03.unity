@@ -9089,6 +9089,18 @@ PrefabInstance:
       value: Inventory
       objectReference: {fileID: 0}
     - target: {fileID: 3256920825710379891, guid: bf0fbd4ed4c47dc4c9ef735d79d51099, type: 3}
+      propertyPath: itemTextUI
+      value: 
+      objectReference: {fileID: 1521640835}
+    - target: {fileID: 3256920825710379891, guid: bf0fbd4ed4c47dc4c9ef735d79d51099, type: 3}
+      propertyPath: itemImageUI
+      value: 
+      objectReference: {fileID: 1521640836}
+    - target: {fileID: 3256920825710379891, guid: bf0fbd4ed4c47dc4c9ef735d79d51099, type: 3}
+      propertyPath: playerEffect
+      value: 
+      objectReference: {fileID: 1912534559}
+    - target: {fileID: 3256920825710379891, guid: bf0fbd4ed4c47dc4c9ef735d79d51099, type: 3}
       propertyPath: coinsCountText
       value: 
       objectReference: {fileID: 175042167}
@@ -9202,6 +9214,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50ac88996f532104bb4bd2e0a07f6a5f, type: 3}
+--- !u!114 &1521640835 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3997965593231898438, guid: 50ac88996f532104bb4bd2e0a07f6a5f, type: 3}
+  m_PrefabInstance: {fileID: 1521640834}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+--- !u!114 &1521640836 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 583879331780696511, guid: 50ac88996f532104bb4bd2e0a07f6a5f, type: 3}
+  m_PrefabInstance: {fileID: 1521640834}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1001 &1569364029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9918,6 +9952,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af743281c6888084785459774394fbce, type: 3}
+--- !u!114 &1912534559 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8020345463653449351, guid: af743281c6888084785459774394fbce, type: 3}
+  m_PrefabInstance: {fileID: 1912534558}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676961592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e2c2533000b334ba572ca7e9f81f7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1001 &1950158076
 PrefabInstance:
   m_ObjectHideFlags: 0
