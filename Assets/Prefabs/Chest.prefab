@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   animator: {fileID: 7291349888118741909}
-  coinsToAdd: 5
+  coinsToAdd: 10
   chestOpenSound: {fileID: 8300000, guid: b0699ed7723b1bb40a399c5477c9a386, type: 3}
 --- !u!61 &846718664727260861
 BoxCollider2D:

@@ -19,3 +19,4 @@ MonoBehaviour:
   bonusHealth: 20
   bonusSpeed: 0
   speedDuration: 0
+  price: 2
