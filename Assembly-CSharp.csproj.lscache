@@ -70,6 +70,7 @@ Assets/Scripts/
  HealthPlayer.cs
  Inventory.cs
  Items.cs
+ ItemsDataBase.cs
  Ladder.cs
  LevelSelector.cs
  LoadAndSaveData.cs

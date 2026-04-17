@@ -44,6 +44,7 @@ public class Inventory : MonoBehaviour
         playerEffect.AddSpeed(currentItem.bonusSpeed, currentItem.speedDuration);
         content.Remove(currentItem);
         GetNextItem();
+        GetPreviousItem();
         UpdateInventoryUI();
     }
 
@@ -87,11 +88,13 @@ public class Inventory : MonoBehaviour
         {
             itemImageUI.sprite = content[contentCurrentIndex].image;
             itemTextUI.text = content[contentCurrentIndex].name;
+            //Debug.Log("Updating inventory UI with item: " + content[contentCurrentIndex].name);
         }
         else
         {
             itemImageUI.sprite = emptyItemImage;
             itemTextUI.text = "";
+            //Debug.Log("Updating inventory UI with empty item");
         }
         
     }
